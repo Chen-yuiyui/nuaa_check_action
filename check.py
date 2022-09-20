@@ -10,7 +10,7 @@ from send_mail import send_mail
 # from requests_toolbelt.utils import dump
 
 try_times = 1   # 失败这么多次后就直接不管了
-delay = 2   # 访问页面前的延迟，为了防止过快访问网站被封IP
+delay = 10   # 访问页面前的延迟，为了防止过快访问网站被封IP
 
 
 # 登陆并且返回json形式的cookie，如果登陆失败返回空串
@@ -124,8 +124,8 @@ def get_uid_id(cookies):
 def check(cookies, geo_api_info, id, uid):
     # Post的data，如果你是勇士可以尝试给这个打上注释，老谜语人了，看不懂ヾ(•ω•`)o
     data = {
-        'sfzhux': '1',
-        'zhuxdz': '80804',
+        'sfzhux': '0',
+        'zhuxdz': '',
         'szgj': '',
         'szcs': '',
         'szgjcs': '',
@@ -163,8 +163,8 @@ def check(cookies, geo_api_info, id, uid):
         'hsjcfourjg': '',
         'ywchxjctime': '',
         'hsjclist': '%7B%7D',
-        'njrddz': 'b11',
-        'gzczxq': '1',
+        'njrddz': '南航将军路校区',
+        'gzczxq': '2',
         'ifznqgfxljs': '',
         'iflsqgfxljs': '',
         'zrwjtw': '1',
