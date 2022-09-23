@@ -188,12 +188,17 @@ def check(cookies, geo_api_info, id, uid):
         'sfyyjc': '0',
         'jcjgqr': '0',
         'remark': '',
-        'address': geo_api_info['formattedAddress'],
-        'geo_api_info': json.dumps(geo_api_info, separators=(',', ':')),
-        'area': geo_api_info['addressComponent']['province'] + ' ' + geo_api_info['addressComponent']['city']
-                + ' ' + geo_api_info['addressComponent']['district'],
-        'province': geo_api_info['addressComponent']['province'],
-        'city': geo_api_info['addressComponent']['city'],
+       # 'address': geo_api_info['formattedAddress'],
+        #'geo_api_info': json.dumps(geo_api_info, separators=(',', ':')),
+        #'area': geo_api_info['addressComponent']['province'] + ' ' + geo_api_info['addressComponent']['city']
+        #        + ' ' + geo_api_info['addressComponent']['district'],
+        #'province': geo_api_info['addressComponent']['province'],
+        #'city': geo_api_info['addressComponent']['city'],
+        #
+        'geo_api_info': {"type":"complete","position":{"Q":31.939607,"R":118.791155,"lng":118.791155,"lat":31.939607},"location_type":"html5","message":"Get geolocation success.Don't need convert.Get address success.","accuracy":29,"isConverted":1,"status":1,"addressComponent":{"citycode":"025","adcode":"320115","businessAreas":[{"name":"开发区","id":"320115","location":{"Q":31.925973,"R":118.80980399999999,"lng":118.809804,"lat":31.925973}}],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"将军大道","streetNumber":"29号","country":"中国","province":"江苏省","city":"南京市","district":"江宁区","towncode":"320115011000","township":"秣陵街道"},"formattedAddress":"江苏省南京市江宁区秣陵街道慧园路南京航空航天大学将军路校区","roads":[],"crosses":[],"pois":[],"info":"SUCCESS"},
+        'area': '江苏省 南京市 江宁区',
+        'province': '江苏省',
+        'city': '南京市',
         'sfzx': '1',
         'sfjcwhry': '0',
         'sfjchbry': '0',
