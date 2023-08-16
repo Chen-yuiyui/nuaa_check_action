@@ -1,0 +1,4 @@
+company = gtja
+ip = 10.x.x.x
+passwd = ******
+id = SX0000
